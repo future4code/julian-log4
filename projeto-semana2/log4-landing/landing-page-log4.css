@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-
 
 *{
+    font-family: 'Times New Roman';
 	margin: 0;
 }
 
 body{
+    background-color: #D4747F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,8 @@ body{
 }
 
 header, header ul{
-	background-color: black;
+    position: fixed;
+	background-color: #C23949;
 	width: 100%;
 	height: 8vh;
 	display: flex;
@@ -32,23 +33,24 @@ footer, footer ul{
     flex-direction: row;
     align-items: center;
 	justify-content: space-evenly;
-	background-color: #D4747F;
+	background-color: #C23949;
 }
 
 main{
-    max-width: 100%;
+    color: whitesmoke;
+    max-width: 95%;
     height: auto;
 	padding: 1%;
-	background-color: #C23949;
     display: grid;
     grid-template: repeat(6, 1fr) / 1fr;   
 }
 
 section{
-    display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
-    width: 100%;
-	height: 70vh;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;    
+	height: 100%;    
 }
 
 a, ul{  
@@ -61,6 +63,22 @@ ul{
 
 }
 
+button{
+    color: whitesmoke;
+    background-color: #D4747F;
+    font-size: large;
+    width: 20%;
+    height: 15%;
+}
+button:hover{
+    color: black;
+    background-color: #e09ca4;
+}  
+
+button:active{
+    color: black;
+    background-color: #C23949;
+}
 
 /* Header styles */
 
@@ -75,5 +93,92 @@ a:active{
 }
 
 /* Main styles */
+
+#img1{
+    width: 100%;
+    height: 100%;
+}
+
+#sec1{
+    height: 80% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgtxt{
+    font-size: xx-large;
+    font-weight: bold;
+    top: 40%;
+    bottom:50%;
+    color: whitesmoke;
+    position: absolute;
+}
+
+#sec2{
+    background-color: #C23949;
+}
+
+p{
+    font-size: xlarge;
+}
+#sec2, #sec3, #sec5{
+    font-size: xx-large;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+section:nth-child(5) div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+section:nth-child(5) div p{
+    border: 1px solid black;
+    font-size: 95%;
+}
+
+#sec4, #sec6{
+    background-color: #C23949;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input{
+    font-size: medium;
+    height: 5%;
+    width: 25%;
+}
+textarea{
+    font-size: medium;
+    height: 15%;
+    width: 25%;
+}
+
+section div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icones {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+}
+#item {
+    justify-content: space-evenly;
+    font-size: 100px;
+    align-items: center;
+}
 
 /* Footer styles */
