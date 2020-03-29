@@ -1,11 +1,11 @@
 
 *{
-    font-family: 'Times New Roman';
+    font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 }
 
 body{
-    background-color: #D4747F;
+    background-color: whitesmoke
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,13 +22,14 @@ header, header ul{
 	display: flex;
     flex-direction:row;
     align-items: center;
-	justify-content: space-evenly;
+    justify-content: space-evenly;
+    z-index: 9999; /*add*/
 }
 
 footer, footer ul{
     
     width: 100%;
-    height: 25vh;
+    height: 20vh;
 	display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,7 +38,7 @@ footer, footer ul{
 }
 
 main{
-    color: whitesmoke;
+   /* color: whitesmoke;*/
     max-width: 95%;
     height: auto;
 	padding: 1%;
@@ -59,9 +60,6 @@ a, ul{
     list-style-type: none;
 }
 
-ul{
-
-}
 
 button{
     color: whitesmoke;
@@ -119,26 +117,49 @@ a:active{
     background-color: #C23949;
 }
 
-p{
-    font-size: xlarge;
+.sec2  p{
+    color: whitesmoke;/**/
 }
+
+ h3{
+    color: whitesmoke;/**/
+}
+
+.titulo-diferenciais{/**/
+    color: black;
+}
+
+/*p{
+    font-size: xlarge;
+}*/
+
 #sec2, #sec3, #sec5{
-    font-size: xx-large;
+   /* font-size: xx-large;*/
     text-align: center;
     justify-content: space-evenly;
 }
 
-section:nth-child(5) div{
+.sec3  p{/**/
+    color: black;
+    line-height: 1.5;
+}
+
+
+.sec3, .sec5 {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
 }
-
-section:nth-child(5) div p{
-    border: 1px solid black;
-    font-size: 95%;
+.sec5 p{/**/
+    line-height: 1.5;
 }
+
+.titulo-depoimento{/**/
+    color: black;
+}
+
 
 #sec4, #sec6{
     background-color: #C23949;
@@ -161,7 +182,7 @@ textarea{
     width: 25%;
 }
 
-section div{
+section  div{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -170,15 +191,15 @@ section div{
 }
 
 .icones {
-    height: 10%;
-    width: 100%;
-    display: flex;
+  /*  height: 10%;*/
+   /* width: 100%;*/
+  /*  display: flex;*/
     flex-direction: row; 
 }
 #item {
     justify-content: space-evenly;
-    font-size: 100px;
-    align-items: center;
+    font-size: 70px;/**/
+  /*  align-items: center;*/
 }
 
 /* Footer styles */
