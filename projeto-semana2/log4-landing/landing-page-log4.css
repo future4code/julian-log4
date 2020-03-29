@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: whitesmoke
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,12 +18,12 @@ header, header ul{
     position: fixed;
 	background-color: #C23949;
 	width: 100%;
-	height: 8vh;
+	height: 10vh;
 	display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 9999; /*add*/
+    z-index: 9999; 
 }
 
 footer, footer ul{
@@ -31,14 +31,14 @@ footer, footer ul{
     width: 100%;
     height: 20vh;
 	display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
 	justify-content: space-evenly;
 	background-color: #C23949;
 }
 
 main{
-   /* color: whitesmoke;*/
+   
     max-width: 95%;
     height: auto;
 	padding: 1%;
@@ -60,7 +60,6 @@ a, ul{
     list-style-type: none;
 }
 
-
 button{
     color: whitesmoke;
     background-color: #D4747F;
@@ -74,20 +73,30 @@ button:hover{
 }  
 
 button:active{
-    color: black;
+    color: whitesmoke;
     background-color: #C23949;
 }
 
 /* Header styles */
 
-a:hover{
-    color: black;
-    background-color: #D4747F;
+#logo{
+    width: 40%;
+    height: 5%;
     
 }
 
+#marca{
+    width: 18%;
+    height: 100%;
+    
+}
+
+a:hover{
+    color: black;
+}
+
 a:active{
-    background-color: aliceblue;
+    color: #e09ca4;
 }
 
 /* Main styles */
@@ -107,7 +116,7 @@ a:active{
 #imgtxt{
     font-size: xx-large;
     font-weight: bold;
-    top: 40%;
+    top: 25%;
     bottom:50%;
     color: whitesmoke;
     position: absolute;
@@ -117,49 +126,34 @@ a:active{
     background-color: #C23949;
 }
 
-.sec2  p{
-    color: whitesmoke;/**/
+.sec2 p,.sec4  p{
+    font-weight: bold;
+    font-size: medium;
+    color: whitesmoke;
 }
 
- h3{
-    color: whitesmoke;/**/
+ h3, h4{
+    color: whitesmoke;
 }
 
-.titulo-diferenciais{/**/
+.titulo-diferenciais, .titulo-depoimento{
     color: black;
 }
 
-/*p{
-    font-size: xlarge;
-}*/
-
 #sec2, #sec3, #sec5{
-   /* font-size: xx-large;*/
+   
     text-align: center;
     justify-content: space-evenly;
 }
 
-.sec3  p{/**/
+.sec3,.sec5  p{
     color: black;
     line-height: 1.5;
-}
-
-
-.sec3, .sec5 {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
 }
-.sec5 p{/**/
-    line-height: 1.5;
-}
-
-.titulo-depoimento{/**/
-    color: black;
-}
-
 
 #sec4, #sec6{
     background-color: #C23949;
@@ -190,16 +184,18 @@ section  div{
     justify-content: space-around;
 }
 
-.icones {
-  /*  height: 10%;*/
-   /* width: 100%;*/
-  /*  display: flex;*/
-    flex-direction: row; 
-}
 #item {
+    flex-direction: row; 
     justify-content: space-evenly;
-    font-size: 70px;/**/
-  /*  align-items: center;*/
+    font-size: 12vh;
+
 }
 
 /* Footer styles */
+#item2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    font-size: 10vh;
+}
