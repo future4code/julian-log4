@@ -3,7 +3,6 @@
     font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 }
-
 body{
     background-color: whitesmoke;
     display: flex;
@@ -13,7 +12,6 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
 header, header ul{
     position: fixed;
 	background-color: #C23949;
@@ -25,7 +23,6 @@ header, header ul{
     justify-content: space-evenly;
     z-index: 9999; 
 }
-
 footer, footer ul{
     
     width: 100%;
@@ -36,7 +33,6 @@ footer, footer ul{
 	justify-content: space-evenly;
 	background-color: #C23949;
 }
-
 main{
    
     max-width: 95%;
@@ -45,7 +41,6 @@ main{
     display: grid;
     grid-template: repeat(6, 1fr) / 1fr;   
 }
-
 section{
     display: flex;
     flex-direction: column;
@@ -53,13 +48,11 @@ section{
     width: 100%;    
 	height: 100%;    
 }
-
 a, ul{  
     color: whitesmoke; 
     text-decoration: none;
     list-style-type: none;
 }
-
 button{
     color: whitesmoke;
     background-color: #D4747F;
@@ -71,7 +64,6 @@ button:hover{
     color: black;
     background-color: #e09ca4;
 }  
-
 button:active{
     color: whitesmoke;
     background-color: #C23949;
@@ -84,17 +76,14 @@ button:active{
     height: 5%;
     
 }
-
 #marca{
     width: 18%;
     height: 100%;
     
 }
-
 a:hover{
     color: black;
 }
-
 a:active{
     color: #e09ca4;
 }
@@ -105,14 +94,12 @@ a:active{
     width: 100%;
     height: 100%;
 }
-
 #sec1{
     height: 80% ;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #imgtxt{
     font-size: xx-large;
     font-weight: bold;
@@ -121,31 +108,25 @@ a:active{
     color: whitesmoke;
     position: absolute;
 }
-
 #sec2{
     background-color: #C23949;
 }
-
 .sec2 p,.sec4  p{
     font-weight: bold;
     font-size: medium;
     color: whitesmoke;
 }
-
- h3, h4{
+h3, h4{
     color: whitesmoke;
 }
-
 .titulo-diferenciais, .titulo-depoimento{
     color: black;
 }
-
 #sec2, #sec3, #sec5{
    
     text-align: center;
     justify-content: space-evenly;
 }
-
 .sec3,.sec5  p{
     color: black;
     line-height: 1.5;
@@ -175,7 +156,6 @@ textarea{
     height: 15%;
     width: 25%;
 }
-
 section  div{
     width: 100%;
     display: flex;
@@ -188,14 +168,89 @@ section  div{
     flex-direction: row; 
     justify-content: space-evenly;
     font-size: 12vh;
-
 }
 
 /* Footer styles */
+
 #item2 {
     width: 100%;
     display: flex;
     flex-direction: row; 
     justify-content: space-evenly;
     font-size: 10vh;
+}
+
+/* Mobile-first */
+
+@media screen and (max-width : 812px) {
+
+    /* Header */
+   
+    header ul li:first-child{
+        align-self: center;
+        display: block;
+        position: fixed;
+    }
+    li a{
+        color: #C23949;
+    }
+
+    /* Main */
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    section{
+        padding: 5%;
+    }
+    p{
+        font-weight: lighters;
+    }
+    button{
+        
+        font-size: large;
+        width: 50%;
+        height: 30%;
+    }
+
+    input{
+        font-size: medium;
+        height: 10%;
+        width: 70%;
+    }
+    textarea{
+        font-size: medium;
+        height: 15%;
+        width: 70%;
+    }
+    #sec1, #img1{
+        width: 100%;
+        height: 25vh;
+    }
+    #imgtxt{
+        top: 0;
+        bottom: 60%;
+    }
+    h3, h4, #imgtxt{
+        font-size: large;
+        text-align: center;
+        margin: 5% 0;
+    }
+    #sec3 div{
+        flex-direction: column;
+        align-content: center;
+    }
+    .sec2 p,.sec4  p{
+        font-weight: normal;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    footer h4{
+        margin: 0;
+    }
 }
